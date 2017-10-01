@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+  </head>
+  <body>
+    <script type="text/javascript" src="jquery/jquery-2.2.4.js"></script>
+    <script type="text/javascript" src="shared/console.js"></script>
+    <script>
+      var exampleName = "Example 1-8.js";
+      var title = document.querySelector("head>title");
+      title.textContent = "Example 1-8";
+      $.getScript(exampleName, function () { someFunction(); });
+    </script>
+  </body>
+</html>
