@@ -1,0 +1,15 @@
+{
+    "manifest_version": 2,
+    "background_page" : "Example 3-1.html", 
+    "content_scripts" : [
+        {
+            "js":[ "Example 3-1.js" ], 
+            "matches":[ "http://*/*" ], 
+            "run_at":"document_end"  
+        }
+    ], 
+    "description" : "", 
+    "name" : "Chrome extension (allows CORS) for Example 3-1 from D.Parker's book", 
+    "permissions" : [ "http://*/*"],
+    "version" : "1.0"
+}
