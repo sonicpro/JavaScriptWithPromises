@@ -39,6 +39,9 @@ function showPun() {
 function getPun () {
     // ajaxGet() returns a promise that is eventually fulfilled
     // by json for {content: "The pet store job was ruff!"}
+
+    // If ajaxGet() returned the JSON synchronously, getPun() and showPun()
+    // would not consume or return promises!
     return ajaxGet("http://127.0.0.1/JSWP/pun.json").then(function (json) {
         var pun = JSON.parse(json);
         return pun.content;
