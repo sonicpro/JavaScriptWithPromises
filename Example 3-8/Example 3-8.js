@@ -34,7 +34,7 @@ var mapping = {
 
 // Creating the array of promises (pending operations) from the array of accounts.
 var requests = accounts.map(function (account) {
-    return ajaxGet(mapping[account]);
+    return ajaxGet("http://127.0.0.1/JSWP/Example 3-8/" + mapping[account]);
 });
 
 

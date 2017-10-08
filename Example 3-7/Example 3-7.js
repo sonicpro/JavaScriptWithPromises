@@ -34,7 +34,7 @@ var mapping = {
 
 // Creating the array of promises from the array of accounts.
 var requests = accounts.map(function (account) {
-    return ajaxGet(mapping[account]);
+    return ajaxGet("http://127.0.0.1/JSWP/Example 3-7/" + mapping[account]);
 });
 
 // Create a single promise from the array of promises and provide resolve / reject handlers.
