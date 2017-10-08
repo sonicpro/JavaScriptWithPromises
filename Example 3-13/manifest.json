@@ -1,0 +1,15 @@
+{
+    "manifest_version": 2,
+    "background_page" : "Example 3-13.html", 
+    "content_scripts" : [
+        {
+            "js":[ "Example 3-13.js" ], 
+            "matches":[ "http://*/*" ], 
+            "run_at":"document_end"  
+        }
+    ], 
+    "description" : "", 
+    "name" : "Allows CORS for Example 3-13 - running tasks sequentially by means of recursion", 
+    "permissions" : [ "http://*/*"],
+    "version" : "1.0"
+}
