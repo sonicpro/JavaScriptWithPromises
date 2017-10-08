@@ -1,0 +1,15 @@
+{
+    "manifest_version": 2,
+    "background_page" : "Example 3-8.html", 
+    "content_scripts" : [
+        {
+            "js":[ "Example 3-8.js" ], 
+            "matches":[ "http://*/*" ], 
+            "run_at":"document_end"  
+        }
+    ], 
+    "description" : "", 
+    "name" : "Allows CORS for Example 3-8 - running all the parallel tasks regardless of their outcome", 
+    "permissions" : [ "http://*/*"],
+    "version" : "1.0"
+}
