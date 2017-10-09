@@ -13,7 +13,9 @@ function loadImageNodeStyle(url, callback) {
 
 // Using promisify to wrap a node-style function
 var loadImageWrapper = P.promisify(loadImageNodeStyle);
-// The wrapped function does not require a callback with two parameters (error, image)
+// The wrapped function does not require a callback with two parameters (error, image).
+// Bluebird susbstitutes the callback(null, additional params...) call with the function(additional params...) passed to then(),
+// and the callback(error) call with the callback passed to catch().
 var promise = loadImageWrapper('smile.gif');
 
 promise.then(function (image) {
