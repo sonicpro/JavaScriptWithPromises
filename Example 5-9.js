@@ -24,4 +24,9 @@ getData().catch(function (e) {
     console.log('Some error occurred');
     console.log(e);
 });
+
+// Console output:
+// Some error occurred
+// [Error: Unexpected problem]
+// Data fetch took 15 ms
     
